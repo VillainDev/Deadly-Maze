@@ -54,6 +54,7 @@
      <Compile Include="Assets\Assets\Scripts\CubeCamera.cs" />
      <Compile Include="Assets\Assets\Scripts\CubeController.cs" />
      <Compile Include="Assets\Assets\Scripts\MyLight.cs" />
+     <Compile Include="Assets\Assets\Scripts\PauseScreen.cs" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Assets\Models\Item\45 ACP Smith and Wesson Hand Gun\Readme.txt" />
      <None Include="Assets\Assets\Models\Main\pyramid\README.txt" />
