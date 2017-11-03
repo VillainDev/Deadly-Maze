@@ -7,9 +7,9 @@ namespace Monster
 {
     public class Monster : MonoBehaviour
     {
-        int Damage;
-        int HP;
-        string MonsterName;
+        int Damage; //ability to damage player
+        int HP; //its health point
+        string MonsterName; //its name
         public Monster(string Name, int MonsterDamage, int MonsterHP)
         {
             MonsterName = Name;
