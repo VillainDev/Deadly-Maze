@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
 using UnityEngine;
 using Item;
 using Monster;
@@ -11,7 +14,7 @@ namespace Player
     [Serializable]
     public class Player : MonoBehaviour
     {
-
+        public string PlayerName;
         ConsoleSetting Key; //User's Console Setting
         int HP; //min:0, max: 100
         int process; //min:0%, max:100%
@@ -170,5 +173,32 @@ namespace Player
             Pole.SetPole(Pole.GetPole() - 1);
         }
         #endregion
+    }
+    public class SaveDataProcessing
+    {
+        public static void CreateSaveData(ref Player SavePlayer)
+        {
+            IFormatter formatter = new BinaryFormatter();
+            Stream stream = new FileStream("/SaveData/"+SavePlayer.PlayerName+".bin", FileMode.Create, FileAccess.Write, FileShare.None);
+            formatter.Serialize(stream, SavePlayer);
+            stream.Close();
+        }
+        public static Player LoadSaveData(string FileName)
+        {
+            IFormatter formatter = new BinaryFormatter();
+            Stream stream = new FileStream("/SaveData/" + FileName + ".bin", FileMode.Open, FileAccess.Read, FileShare.Read);
+            Player obj = (Player)formatter.Deserialize(stream);
+            stream.Close();
+            return obj;
+        }
+        public static string[] GetSaveDataName()
+        {
+            DirectoryInfo d = new DirectoryInfo(@"/SaveData");
+            FileInfo[] list = d.GetFiles(".bin");
+            string[] FileList = new string[list.Length];
+            for (int i = 0; i < list.Length; i++)
+                FileList[i] = list[i].Name;
+            return FileList;
+        }
     }
 }
