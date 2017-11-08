@@ -51,11 +51,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Assets\Scripts\ConsoleSetting.cs" />
      <Compile Include="Assets\Assets\Scripts\CubeCamera.cs" />
      <Compile Include="Assets\Assets\Scripts\CubeController.cs" />
      <Compile Include="Assets\Assets\Scripts\FinishScreen.cs" />
+     <Compile Include="Assets\Assets\Scripts\GameMenuOptionText.cs" />
+     <Compile Include="Assets\Assets\Scripts\Item.cs" />
+     <Compile Include="Assets\Assets\Scripts\Monster.cs" />
      <Compile Include="Assets\Assets\Scripts\MyLight.cs" />
      <Compile Include="Assets\Assets\Scripts\PauseScreen.cs" />
+     <Compile Include="Assets\Assets\Scripts\Player.cs" />
+     <Compile Include="Assets\Assets\Scripts\PoleMap.cs" />
+     <Compile Include="Assets\Assets\Scripts\TrapArrow.cs" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Assets\Models\Item\45 ACP Smith and Wesson Hand Gun\Readme.txt" />
      <None Include="Assets\Assets\Models\Main\pyramid\README.txt" />

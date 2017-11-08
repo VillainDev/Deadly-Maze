@@ -3,7 +3,6 @@ using UnityEngine;
 using UnityEngine.Audio;
 
 public class FinishScreen : MonoBehaviour {
-    public AudioMixerSnapshot inFinish;
     // finishing canvas
     // appearing when reach finishing point in the ground
     public Transform FinishCanvas;
@@ -11,14 +10,6 @@ public class FinishScreen : MonoBehaviour {
     public Transform HUD;
     // memory panel: shows slot to save progress
     public Transform MemoryFile;
-    // AUDIO REFERENCE
-    // bpm: variable holds the speed of sound on. Developer can verify outside script
-    // m_TransitionIn: the spped sound on. Dev cannot modify this
-    public float bpm = 128;
-    private float m_TransitionIn;
-    void Start () {
-        m_TransitionIn = 60 / bpm;
-    }
     /// <summary>
     ///  when player reach finish point (triggered zone)
     /// 1. Finish theme will be on
@@ -31,8 +22,6 @@ public class FinishScreen : MonoBehaviour {
     void OnTriggerEnter (Collider other) {
         // get in finish zone, compare to the player
         if (other.CompareTag ("FinishZone")) {
-            // sound on
-            inFinish.TransitionTo (m_TransitionIn);
             // screen freeze
             Time.timeScale = 0;
             // show finish canvas and hide HUD canvas
