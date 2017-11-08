@@ -4,7 +4,8 @@ using UnityEngine;
 
 namespace Item
 {
-    public class Gun : MonoBehaviour
+    [System.Serializable]
+    public class Gun
     {
         public enum _GunType : int { Handgun = 0, Shotgun = 1, AK = 2 };
         public enum _GunPower : int { Weak = 5, Average = 20, Strong = 40 };
@@ -77,7 +78,8 @@ namespace Item
         }     //Get AK Bullet
         #endregion
     }
-    public class Item : MonoBehaviour
+    [System.Serializable]
+    public class Item
     {
         #region THE ONLY THING THAT YOU NEED TO KNOW IN THIS PART IS PUBLIC THINGY
         /******************/
