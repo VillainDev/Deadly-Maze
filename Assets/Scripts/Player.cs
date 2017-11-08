@@ -11,10 +11,10 @@ using Monster;
 
 namespace Player
 {
-    [Serializable]
-    public class Player : MonoBehaviour
+    [System.Serializable]
+    public class Player
     {
-        public string PlayerName;
+        public string PlayerName; //should not contain special ccharacters
         ConsoleSetting Key; //User's Console Setting
         int HP; //min:0, max: 100
         int process; //min:0%, max:100%
@@ -23,13 +23,13 @@ namespace Player
         float x, y, z;
 
         #region  backpacks for player
-        Item.Item SmallBulletPack = new Item.Item(Item.Item._Item.BulletPack);
-        Item.Item MediumBulletPack = new Item.Item(Item.Item._Item.BulletPack);
-        Item.Item LargeBulletPack = new Item.Item(Item.Item._Item.BulletPack);
-        Item.Item MediumFAK = new Item.Item(Item.Item._Item.FirstAidKit);
-        Item.Item BigFAK = new Item.Item(Item.Item._Item.FirstAidKit);
-        Item.Item Pole = new Item.Item(Item.Item._Item.Pole);
-        Gun PlayerGun = new Gun(); //containing current type of gun and numbers of bullets in each gun (This PlayerGun can change its type)
+        public Item.Item SmallBulletPack = new Item.Item(Item.Item._Item.BulletPack);
+        public Item.Item MediumBulletPack = new Item.Item(Item.Item._Item.BulletPack);
+        public Item.Item LargeBulletPack = new Item.Item(Item.Item._Item.BulletPack);
+        public Item.Item MediumFAK = new Item.Item(Item.Item._Item.FirstAidKit);
+        public Item.Item BigFAK = new Item.Item(Item.Item._Item.FirstAidKit);
+        public Item.Item Pole = new Item.Item(Item.Item._Item.Pole);
+        public Gun PlayerGun = new Gun(); //containing current type of gun and numbers of bullets in each gun (This PlayerGun can change its type)
                                    /*********************/
         #endregion
         #region contructor
@@ -81,19 +81,26 @@ namespace Player
                 return false;
             }
         } //two type: "Big" and "Medium", return true if sucessfully increased health, false otherwise
+        public string GetScene()
+        {
+            return sceneName;
+        }
+        public void SetScene(string newScene)
+        {
+            sceneName = newScene;
+        }
         public void MonsterDamage(Monster.Monster currentMonster)
         {
             //TODO
         }
-        public enum PlayerStatus { Healthy = 0, Normal = 1, Bad = 2 };
-        public PlayerStatus ShowStatus()
+        public string ShowStatus()
         {
             if (HP >= 80)
-                return PlayerStatus.Healthy;
+                return "Healthy";
             else if (HP >= 50)
-                return PlayerStatus.Normal;
+                return "Normal";
             else
-                return PlayerStatus.Bad;
+                return "Bad";
 
         } //show current player status
         public bool BulletUp(string type, string size)// 3 types: "Handgun","Shotgun" and "AK"; 3 size: "Small", "Medium","Large"
@@ -176,25 +183,25 @@ namespace Player
     }
     public class SaveDataProcessing
     {
-        public static void CreateSaveData(ref Player SavePlayer)
+        public static void Save(ref Player SavePlayer)
         {
-            IFormatter formatter = new BinaryFormatter();
-            Stream stream = new FileStream("/SaveData/"+SavePlayer.PlayerName+".bin", FileMode.Create, FileAccess.Write, FileShare.None);
+            BinaryFormatter formatter = new BinaryFormatter();
+            FileStream stream = File.Create(Directory.GetCurrentDirectory() + "/Assets/SaveData/" +SavePlayer.PlayerName+".sav");
             formatter.Serialize(stream, SavePlayer);
             stream.Close();
         }
-        public static Player LoadSaveData(string FileName)
+        public static Player Load(string FileName)
         {
-            IFormatter formatter = new BinaryFormatter();
-            Stream stream = new FileStream("/SaveData/" + FileName + ".bin", FileMode.Open, FileAccess.Read, FileShare.Read);
+            BinaryFormatter formatter = new BinaryFormatter();
+            Stream stream = File.Open(Directory.GetCurrentDirectory() + "/Assets/SaveData/" + FileName + ".sav",FileMode.Open);
             Player obj = (Player)formatter.Deserialize(stream);
             stream.Close();
             return obj;
         }
         public static string[] GetSaveDataName()
         {
-            DirectoryInfo d = new DirectoryInfo(@"/SaveData");
-            FileInfo[] list = d.GetFiles(".bin");
+            DirectoryInfo d = new DirectoryInfo(Directory.GetCurrentDirectory() + "/Assets/SaveData");
+            FileInfo[] list = d.GetFiles("*.sav");
             string[] FileList = new string[list.Length];
             for (int i = 0; i < list.Length; i++)
                 FileList[i] = list[i].Name;

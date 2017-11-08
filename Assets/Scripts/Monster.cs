@@ -5,7 +5,8 @@ using Player;
 
 namespace Monster
 {
-    public class Monster : MonoBehaviour
+    [System.Serializable]
+    public class Monster
     {
         int Damage; //ability to damage player
         int HP; //its health point

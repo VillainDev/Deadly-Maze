@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,6 +10,7 @@ namespace GameMenu
     public class GameMenuOptionText : MonoBehaviour
     {
         #region VariableAndArray
+        Player.Player CurrentPlayer;
         //float indicating animation time
         float over1, over2, over3;
         //bools for animation branching
@@ -33,6 +35,21 @@ namespace GameMenu
         bool isFade; //bool indicating for intro fade in
         Light AreaLight, DirectionalLight, PathLight; //Reference to light
         const float ALInitialIntensity = 0.36f, DLInitialIntensity = 0.6f, PLInitialIntensity = 0.4f; //Inital value of lights
+        //Objects for Load game
+        static string[] Name = Player.SaveDataProcessing.GetSaveDataName(); //Get file names
+        Player.Player[] SavedPlayer = new Player.Player[Name.Length]; //Get Players
+        GameObject[] DataButton = new GameObject[20]; //Get button
+        GameObject ScrollView;
+        bool LoadFadeIn = true;
+        bool IsDataChosen = false;
+        bool IsLoadFinished = false;
+        Renderer LoadBlack;
+        int IDX = 0; //current index of saved data
+        ScrollRect Slider;
+        float SlidingRange = 1f - (float)(Name.Length - 3) / 20; //standarlize  value in slider (from 1 to SlidingRange)
+        
+        
+        /***************************/
         //GameObject for settings
         Text[] SettingsOptions = new Text[7];
         Image SettingsPanel;
@@ -55,11 +72,14 @@ namespace GameMenu
         bool NextScene = false;
         float fadeOutPosition; //only for z
         Renderer BlackBackground;
+        /****************************/
         /************************/
         #endregion
         // Use this for initialization
         void Start()
         {
+            //float LoadContentHeight = GameObject.Find("LoadContent").transform.bounds.size.y;
+            //Debug.Log(LoadContentHeight);
             isChosen = false; //to decide whether user chooses.
             isFade = true; //to decide whether a part of game is fading
             isSettingFinished = false;
@@ -81,6 +101,46 @@ namespace GameMenu
             DirectionalLight = GameObject.Find("Directional Light").GetComponent<Light>();
             PathLight= GameObject.Find("Path Light").GetComponent<Light>();
             /*******************************/
+            //For the load game part
+            for (int i = 0; i < Name.Length; i++)
+                SavedPlayer[i] = Player.SaveDataProcessing.Load(Name[i].Substring(0, Name[i].Length - 4));
+            ScrollView = GameObject.Find("ScrollView");
+            LoadBlack = GameObject.Find("LoadBlack").GetComponent<Renderer>();
+            //get button in load panel
+            for (int i = 0; i < 20; i++)
+            {
+                string DataName = "Data (" + i.ToString() + ")";
+                DataButton[i] = GameObject.Find(DataName);
+                //cập nhật thông tin từ 0 tới 5
+                
+                if (i < Name.Length)
+                {
+                    //0. Player's name
+                    Text tmpText = DataButton[i].transform.Find("Text (0)").GetComponent<Text>();
+                    tmpText.text = "Player's name: " + SavedPlayer[i].PlayerName;
+                    //1. Scene's name
+                    tmpText = DataButton[i].transform.Find("Text (1)").GetComponent<Text>();
+                    tmpText.text = "Current scene: " + SavedPlayer[i].GetScene();
+                    //2. Health
+                    tmpText = DataButton[i].transform.Find("Text (2)").GetComponent<Text>();
+                    tmpText.text = "Player's health: " + SavedPlayer[i].ShowStatus();
+                    //3. BulletPack
+                    tmpText = DataButton[i].transform.Find("Text (3)").GetComponent<Text>();
+                    tmpText.text = "Bullet pack: S x " + SavedPlayer[i].SmallBulletPack.GetBulletPackSize() + "  M x " + SavedPlayer[i].MediumBulletPack.GetBulletPackSize() + "  L x " + SavedPlayer[i].LargeBulletPack.GetBulletPackSize();
+                    //4.Medical Kit
+                    tmpText = DataButton[i].transform.Find("Text (4)").GetComponent<Text>();
+                    tmpText.text = "Medical Kit: M x " + SavedPlayer[i].MediumFAK.GetFirstAidKitSize() + "  L x " + SavedPlayer[i].BigFAK.GetFirstAidKitSize();
+                    //5.Bullet
+                    tmpText = DataButton[i].transform.Find("Text (5)").GetComponent<Text>();
+                    tmpText.text = "Bullet: HG x " + SavedPlayer[i].PlayerGun.GetHGBullet() + "  SG x " + SavedPlayer[i].PlayerGun.GetSGBullet() + "  AK x " + SavedPlayer[i].PlayerGun.GetAKBullet();            
+                }
+                else
+                {
+                    
+                }
+            }
+            Slider = GameObject.Find("ScrollView").GetComponent<ScrollRect>();
+            /***************************/
             //For the settings part
             //Settings UI
             for(int i = 0; i < 7; i++)
@@ -225,7 +285,223 @@ namespace GameMenu
             #region LoadGame
             else if (userOption == Options.LoadGame)
             {
-                //TODO
+                if(SavedPlayer.Length > 0)
+                {
+                    if (LoadFadeIn)
+                    {
+                        over1 += Time.deltaTime / (1f/2); //test
+                        if (over1 <= 1)
+                        {
+                            //fade out for main option texts
+                            for (int i = 0; i < 4; i++)
+                                OptionArr[i].color = new Color(OptionArr[i].color.r, OptionArr[i].color.g, OptionArr[i].color.b, Mathf.Lerp(1, 0, over1));
+                            Color tmp = ScrollView.GetComponent<Image>().color;
+                            tmp.a = Mathf.Lerp(0, 0.2f, over1);
+                            ScrollView.GetComponent<Image>().color = tmp;
+                            for (int i = 0; i < 20; i++)
+                            {
+                                if (i < Name.Length)
+                                {
+                                    tmp = DataButton[i].GetComponent<Image>().color;
+                                    tmp.a = Mathf.Lerp(0, 0.36f, over1);
+                                    DataButton[i].GetComponent<Image>().color = tmp;
+                                }
+                            }
+                            for (int i = 0; i < 20; i++)
+                            {
+                                if (i < Name.Length)
+                                {
+                                    //0. Player's name
+                                    Text tmpText = DataButton[i].transform.Find("Text (0)").GetComponent<Text>();
+                                    tmpText.color = new Color(tmpText.color.r, tmpText.color.g, tmpText.color.b, Mathf.Lerp(0, 1, over1));
+                                    //1. Scene's name
+                                    tmpText = DataButton[i].transform.Find("Text (1)").GetComponent<Text>();
+                                    tmpText.color = new Color(tmpText.color.r, tmpText.color.g, tmpText.color.b, Mathf.Lerp(0, 1, over1));
+                                    //2. Health
+                                    tmpText = DataButton[i].transform.Find("Text (2)").GetComponent<Text>();
+                                    tmpText.color = new Color(tmpText.color.r, tmpText.color.g, tmpText.color.b, Mathf.Lerp(0, 1, over1));
+                                    //3. BulletPack
+                                    tmpText = DataButton[i].transform.Find("Text (3)").GetComponent<Text>();
+                                    tmpText.color = new Color(tmpText.color.r, tmpText.color.g, tmpText.color.b, Mathf.Lerp(0, 1, over1));
+                                    //4.Medical Kit
+                                    tmpText = DataButton[i].transform.Find("Text (4)").GetComponent<Text>();
+                                    tmpText.color = new Color(tmpText.color.r, tmpText.color.g, tmpText.color.b, Mathf.Lerp(0, 1, over1));
+                                    //5.Bullet
+                                    tmpText = DataButton[i].transform.Find("Text (5)").GetComponent<Text>();
+                                    tmpText.color = new Color(tmpText.color.r, tmpText.color.g, tmpText.color.b, Mathf.Lerp(0, 1, over1));
+                                }
+                            }
+                        }
+                        else //last result
+                        {
+                            for (int i = 0; i < 4; i++)
+                                OptionArr[i].color = new Color(OptionArr[i].color.r, OptionArr[i].color.g, OptionArr[i].color.b, 0);
+                            Color tmp = ScrollView.GetComponent<Image>().color;
+                            tmp.a = 0.2f;
+                            ScrollView.GetComponent<Image>().color = tmp;
+                            for (int i = 0; i < 20; i++)
+                            {
+                                if (i < Name.Length)
+                                {
+                                    tmp = DataButton[i].GetComponent<Image>().color;
+                                    tmp.a = 0.36f;
+                                    DataButton[i].GetComponent<Image>().color = tmp;
+                                }
+                            }
+                            LoadFadeIn = false;
+                        }
+                    }
+                    else if(!IsLoadFinished) //begin choosing
+                    {
+                        if (Input.GetKeyDown(ConsoleSetting.Up))
+                        {
+                            DataButton[IDX].GetComponent<Image>().color = new Color(0, 0, 0, 0.36f);
+                            if (IDX > 0)
+                                --IDX;
+                            if(IDX % 3 == 0)
+                            {
+
+                            }
+                        }
+                        if (Input.GetKeyDown(ConsoleSetting.Down))
+                        {
+                            DataButton[IDX].GetComponent<Image>().color = new Color(0, 0, 0, 0.36f);
+                            if (IDX < Name.Length - 1)
+                               ++IDX;
+                            if(IDX % 3 == 0 && IDX != 0)
+                            {
+                                float y0 = DataButton[IDX - 3].transform.position.y;
+                                float y = DataButton[IDX].transform.position.y;
+                                float unitVal = (y - y0);
+                                if (Slider.verticalNormalizedPosition > SlidingRange)
+                                    Slider.verticalNormalizedPosition -= 0;
+                            }
+                        }
+                        Image currentData = DataButton[IDX].GetComponent<Image>();
+                        BlackWhiteTransition(ref currentData);
+                        if (Input.GetKeyDown(KeyCode.Return))
+                        {
+                            IsLoadFinished = true;
+                            //get Player's data
+                            CurrentPlayer = SavedPlayer[IDX];
+                            IsDataChosen = true;
+                            over1 = 0;
+                        }
+                        if (Input.GetKeyDown(KeyCode.Escape))
+                        {
+                            IsLoadFinished = true;
+                            over1 = 0;
+                        }
+                    }
+                    else
+                    {
+                        //Fade out
+                        if (!IsDataChosen) //return to main screen
+                        {
+                            over1 += Time.deltaTime / (1f / 2);
+                            if (over1 <= 1)
+                            {
+                                //fade in for main option texts
+                                for (int i = 0; i < 4; i++)
+                                    OptionArr[i].color = new Color(OptionArr[i].color.r, OptionArr[i].color.g, OptionArr[i].color.b, Mathf.Lerp(0, 1, over1));
+                                Color tmp = ScrollView.GetComponent<Image>().color;
+                                tmp.a = Mathf.Lerp(0.2f, 0, over1);
+                                ScrollView.GetComponent<Image>().color = tmp;
+                                for (int i = 0; i < 20; i++)
+                                {
+                                    if (i < Name.Length)
+                                    {
+                                        tmp = DataButton[i].GetComponent<Image>().color;
+                                        tmp.a = Mathf.Lerp(0.36f, 0, over1);
+                                        DataButton[i].GetComponent<Image>().color = tmp;
+                                    }
+                                }
+                                for (int i = 0; i < 20; i++)
+                                {
+                                    if (i < Name.Length)
+                                    {
+                                        //0. Player's name
+                                        Text tmpText = DataButton[i].transform.Find("Text (0)").GetComponent<Text>();
+                                        tmpText.color = new Color(tmpText.color.r, tmpText.color.g, tmpText.color.b, Mathf.Lerp(1, 0, over1));
+                                        //1. Scene's name
+                                        tmpText = DataButton[i].transform.Find("Text (1)").GetComponent<Text>();
+                                        tmpText.color = new Color(tmpText.color.r, tmpText.color.g, tmpText.color.b, Mathf.Lerp(1, 0, over1));
+                                        //2. Health
+                                        tmpText = DataButton[i].transform.Find("Text (2)").GetComponent<Text>();
+                                        tmpText.color = new Color(tmpText.color.r, tmpText.color.g, tmpText.color.b, Mathf.Lerp(1, 0, over1));
+                                        //3. BulletPack
+                                        tmpText = DataButton[i].transform.Find("Text (3)").GetComponent<Text>();
+                                        tmpText.color = new Color(tmpText.color.r, tmpText.color.g, tmpText.color.b, Mathf.Lerp(1, 0, over1));
+                                        //4.Medical Kit
+                                        tmpText = DataButton[i].transform.Find("Text (4)").GetComponent<Text>();
+                                        tmpText.color = new Color(tmpText.color.r, tmpText.color.g, tmpText.color.b, Mathf.Lerp(1, 0, over1));
+                                        //5.Bullet
+                                        tmpText = DataButton[i].transform.Find("Text (5)").GetComponent<Text>();
+                                        tmpText.color = new Color(tmpText.color.r, tmpText.color.g, tmpText.color.b, Mathf.Lerp(1, 0, over1));
+                                    }
+                                }
+                            }
+                            else //last result
+                            {
+                                for (int i = 0; i < 4; i++)
+                                    OptionArr[i].color = new Color(OptionArr[i].color.r, OptionArr[i].color.g, OptionArr[i].color.b, 1);
+                                Color tmp = ScrollView.GetComponent<Image>().color;
+                                tmp.a = 0;
+                                ScrollView.GetComponent<Image>().color = tmp;
+                                for (int i = 0; i < 20; i++)
+                                {
+                                    if (i < Name.Length)
+                                    {
+                                        tmp = DataButton[i].GetComponent<Image>().color;
+                                        tmp.a = 0;
+                                        DataButton[i].GetComponent<Image>().color = tmp;
+                                    }
+                                }
+                                for (int i = 0; i < 20; i++)
+                                {
+                                    if (i < Name.Length)
+                                    {
+                                        //0. Player's name
+                                        Text tmpText = DataButton[i].transform.Find("Text (0)").GetComponent<Text>();
+                                        tmpText.color = new Color(tmpText.color.r, tmpText.color.g, tmpText.color.b, 0);
+                                        //1. Scene's name
+                                        tmpText = DataButton[i].transform.Find("Text (1)").GetComponent<Text>();
+                                        tmpText.color = new Color(tmpText.color.r, tmpText.color.g, tmpText.color.b, 0);
+                                        //2. Health
+                                        tmpText = DataButton[i].transform.Find("Text (2)").GetComponent<Text>();
+                                        tmpText.color = new Color(tmpText.color.r, tmpText.color.g, tmpText.color.b, 0);
+                                        //3. BulletPack
+                                        tmpText = DataButton[i].transform.Find("Text (3)").GetComponent<Text>();
+                                        tmpText.color = new Color(tmpText.color.r, tmpText.color.g, tmpText.color.b, 0);
+                                        //4.Medical Kit
+                                        tmpText = DataButton[i].transform.Find("Text (4)").GetComponent<Text>();
+                                        tmpText.color = new Color(tmpText.color.r, tmpText.color.g, tmpText.color.b, 0);
+                                        //5.Bullet
+                                        tmpText = DataButton[i].transform.Find("Text (5)").GetComponent<Text>();
+                                        tmpText.color = new Color(tmpText.color.r, tmpText.color.g, tmpText.color.b, 0);
+                                    }
+                                }
+                                IsLoadFinished = false;
+                                LoadFadeIn = true;
+                                isChosen = false;
+                            }
+                        }
+                        else // load game
+                        {
+                            over1 += Time.deltaTime / 5f;
+                            Debug.Log(LoadBlack.material.color);
+                            if (over1 <= 1)
+                                LoadBlack.material.color = new Color(LoadBlack.material.color.r, LoadBlack.material.color.g, LoadBlack.material.color.b, Mathf.Lerp(0, 1, over1));
+                            else
+                                LoadBlack.material.color = new Color(LoadBlack.material.color.r, LoadBlack.material.color.g, LoadBlack.material.color.b, 1);
+                                //Load to selected game file
+                        }
+                    }
+                }
+                else
+                {
+
+                }
             }
             #endregion
             #region Settings
@@ -426,10 +702,10 @@ namespace GameMenu
             {
                 option.color = Color.Lerp(Color.white, Color.black, Mathf.PingPong(Time.time, 1));
             }
-        #endregion
-        IEnumerator Delay(float time)
+        void BlackWhiteTransition(ref Image option)
         {
-            yield return new WaitForSeconds(time);
+            option.color = Color.Lerp(new Color(0.4f,0.4f,0.4f,0.36f), new Color(0.2f,0.2f,0.2f,0.36f), Mathf.PingPong(Time.time, 1));
         }
+        #endregion
     }
 }
