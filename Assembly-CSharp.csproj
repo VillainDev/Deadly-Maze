@@ -58,12 +58,21 @@
      <Compile Include="Assets\Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Assets\Scripts\PoleMap.cs" />
      <Compile Include="Assets\Assets\Scripts\TrapArrow.cs" />
+     <Compile Include="Assets\MoveToTargetwolf.cs" />
+     <Compile Include="Assets\Whale\Objects\Waletarget.cs" />
      <Compile Include="Assets\scripts\MoveToTarget.cs" />
+     <Compile Include="Assets\scripts\ShooterFlame.cs" />
+     <Compile Include="Assets\scripts\hit.cs" />
+     <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
+     <None Include="Assets\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+     <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
+     <None Include="Assets\woft\Wolf Rigged and Game Ready\Readme.txt" />
      <None Include="Assets\Assets\Models\Item\45 ACP Smith and Wesson Hand Gun\Readme.txt" />
      <None Include="Assets\Assets\Models\Main\pyramid\README.txt" />
      <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
      <None Include="Assets\Assets\Models\Main\pyramid\LICENSE.txt" />
+     <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

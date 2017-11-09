@@ -141,7 +141,7 @@ ModelImporter:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     resampleCurves: 1
-    optimizeGameObjects: 0
+    optimizeGameObjects: 1
     motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: 
@@ -149,13 +149,2223 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Default Take
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 249
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Spider_Eyes
+        weight: 1
+      - path: Spider
+        weight: 1
+      - path: Spider_teeth
+        weight: 1
+      - path: Spider_Fur
+        weight: 1
+      - path: Hemi
+        weight: 1
+      - path: Spider_Armature
+        weight: 1
+      - path: Spider_Armature/Body_003
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Body2
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L/v_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L/v_B2_L/v_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L/v2_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L/v2_B2_L/v2_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L/v3_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L/v3_B2_L/v3_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L/v4_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L/v4_B2_L/v4_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L/FU_2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L/FU_2_L/FU_3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Zahn_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R/v_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R/v_B2_R/v_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R/v2_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R/v2_B2_R/v2_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R/v3_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R/v3_B2_R/v3_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R/v4_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R/v4_B2_R/v4_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R/FU_2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R/FU_2_R/FU_3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Zahn_R
+        weight: 1
+      - path: Spider_Armature/Body_003/v_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v2_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v3_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v4_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v2_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v3_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v4_B3_R_001
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Attack
+      takeName: Attack
+      firstFrame: 0
+      lastFrame: 27
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Spider_Eyes
+        weight: 1
+      - path: Spider
+        weight: 1
+      - path: Spider_teeth
+        weight: 1
+      - path: Spider_Fur
+        weight: 1
+      - path: Hemi
+        weight: 1
+      - path: Spider_Armature
+        weight: 1
+      - path: Spider_Armature/Body_003
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Body2
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L/v_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L/v_B2_L/v_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L/v2_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L/v2_B2_L/v2_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L/v3_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L/v3_B2_L/v3_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L/v4_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L/v4_B2_L/v4_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L/FU_2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L/FU_2_L/FU_3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Zahn_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R/v_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R/v_B2_R/v_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R/v2_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R/v2_B2_R/v2_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R/v3_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R/v3_B2_R/v3_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R/v4_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R/v4_B2_R/v4_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R/FU_2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R/FU_2_R/FU_3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Zahn_R
+        weight: 1
+      - path: Spider_Armature/Body_003/v_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v2_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v3_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v4_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v2_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v3_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v4_B3_R_001
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: die
+      takeName: die
+      firstFrame: 0
+      lastFrame: 72
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Spider_Eyes
+        weight: 1
+      - path: Spider
+        weight: 1
+      - path: Spider_teeth
+        weight: 1
+      - path: Spider_Fur
+        weight: 1
+      - path: Hemi
+        weight: 1
+      - path: Spider_Armature
+        weight: 1
+      - path: Spider_Armature/Body_003
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Body2
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L/v_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L/v_B2_L/v_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L/v2_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L/v2_B2_L/v2_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L/v3_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L/v3_B2_L/v3_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L/v4_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L/v4_B2_L/v4_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L/FU_2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L/FU_2_L/FU_3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Zahn_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R/v_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R/v_B2_R/v_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R/v2_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R/v2_B2_R/v2_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R/v3_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R/v3_B2_R/v3_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R/v4_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R/v4_B2_R/v4_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R/FU_2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R/FU_2_R/FU_3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Zahn_R
+        weight: 1
+      - path: Spider_Armature/Body_003/v_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v2_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v3_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v4_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v2_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v3_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v4_B3_R_001
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: die_2
+      takeName: die_2
+      firstFrame: 0
+      lastFrame: 33
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Spider_Eyes
+        weight: 1
+      - path: Spider
+        weight: 1
+      - path: Spider_teeth
+        weight: 1
+      - path: Spider_Fur
+        weight: 1
+      - path: Hemi
+        weight: 1
+      - path: Spider_Armature
+        weight: 1
+      - path: Spider_Armature/Body_003
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Body2
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L/v_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L/v_B2_L/v_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L/v2_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L/v2_B2_L/v2_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L/v3_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L/v3_B2_L/v3_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L/v4_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L/v4_B2_L/v4_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L/FU_2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L/FU_2_L/FU_3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Zahn_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R/v_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R/v_B2_R/v_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R/v2_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R/v2_B2_R/v2_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R/v3_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R/v3_B2_R/v3_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R/v4_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R/v4_B2_R/v4_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R/FU_2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R/FU_2_R/FU_3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Zahn_R
+        weight: 1
+      - path: Spider_Armature/Body_003/v_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v2_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v3_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v4_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v2_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v3_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v4_B3_R_001
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: fall
+      takeName: fall
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Spider_Eyes
+        weight: 1
+      - path: Spider
+        weight: 1
+      - path: Spider_teeth
+        weight: 1
+      - path: Spider_Fur
+        weight: 1
+      - path: Hemi
+        weight: 1
+      - path: Spider_Armature
+        weight: 1
+      - path: Spider_Armature/Body_003
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Body2
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L/v_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L/v_B2_L/v_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L/v2_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L/v2_B2_L/v2_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L/v3_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L/v3_B2_L/v3_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L/v4_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L/v4_B2_L/v4_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L/FU_2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L/FU_2_L/FU_3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Zahn_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R/v_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R/v_B2_R/v_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R/v2_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R/v2_B2_R/v2_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R/v3_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R/v3_B2_R/v3_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R/v4_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R/v4_B2_R/v4_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R/FU_2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R/FU_2_R/FU_3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Zahn_R
+        weight: 1
+      - path: Spider_Armature/Body_003/v_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v2_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v3_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v4_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v2_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v3_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v4_B3_R_001
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Jump
+      takeName: Jump
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Spider_Eyes
+        weight: 1
+      - path: Spider
+        weight: 1
+      - path: Spider_teeth
+        weight: 1
+      - path: Spider_Fur
+        weight: 1
+      - path: Hemi
+        weight: 1
+      - path: Spider_Armature
+        weight: 1
+      - path: Spider_Armature/Body_003
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Body2
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L/v_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L/v_B2_L/v_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L/v2_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L/v2_B2_L/v2_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L/v3_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L/v3_B2_L/v3_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L/v4_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L/v4_B2_L/v4_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L/FU_2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L/FU_2_L/FU_3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Zahn_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R/v_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R/v_B2_R/v_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R/v2_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R/v2_B2_R/v2_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R/v3_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R/v3_B2_R/v3_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R/v4_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R/v4_B2_R/v4_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R/FU_2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R/FU_2_R/FU_3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Zahn_R
+        weight: 1
+      - path: Spider_Armature/Body_003/v_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v2_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v3_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v4_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v2_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v3_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v4_B3_R_001
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Mund
+      takeName: Mund
+      firstFrame: 0
+      lastFrame: 96
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Spider_Eyes
+        weight: 1
+      - path: Spider
+        weight: 1
+      - path: Spider_teeth
+        weight: 1
+      - path: Spider_Fur
+        weight: 1
+      - path: Hemi
+        weight: 1
+      - path: Spider_Armature
+        weight: 1
+      - path: Spider_Armature/Body_003
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Body2
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L/v_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L/v_B2_L/v_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L/v2_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L/v2_B2_L/v2_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L/v3_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L/v3_B2_L/v3_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L/v4_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L/v4_B2_L/v4_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L/FU_2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L/FU_2_L/FU_3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Zahn_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R/v_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R/v_B2_R/v_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R/v2_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R/v2_B2_R/v2_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R/v3_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R/v3_B2_R/v3_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R/v4_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R/v4_B2_R/v4_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R/FU_2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R/FU_2_R/FU_3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Zahn_R
+        weight: 1
+      - path: Spider_Armature/Body_003/v_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v2_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v3_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v4_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v2_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v3_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v4_B3_R_001
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: normal
+      takeName: normal
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Spider_Eyes
+        weight: 1
+      - path: Spider
+        weight: 1
+      - path: Spider_teeth
+        weight: 1
+      - path: Spider_Fur
+        weight: 1
+      - path: Hemi
+        weight: 1
+      - path: Spider_Armature
+        weight: 1
+      - path: Spider_Armature/Body_003
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Body2
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L/v_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L/v_B2_L/v_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L/v2_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L/v2_B2_L/v2_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L/v3_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L/v3_B2_L/v3_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L/v4_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L/v4_B2_L/v4_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L/FU_2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L/FU_2_L/FU_3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Zahn_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R/v_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R/v_B2_R/v_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R/v2_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R/v2_B2_R/v2_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R/v3_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R/v3_B2_R/v3_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R/v4_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R/v4_B2_R/v4_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R/FU_2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R/FU_2_R/FU_3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Zahn_R
+        weight: 1
+      - path: Spider_Armature/Body_003/v_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v2_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v3_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v4_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v2_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v3_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v4_B3_R_001
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: run_ani_back
+      takeName: run_ani_back
+      firstFrame: 0
+      lastFrame: 15
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Spider_Eyes
+        weight: 1
+      - path: Spider
+        weight: 1
+      - path: Spider_teeth
+        weight: 1
+      - path: Spider_Fur
+        weight: 1
+      - path: Hemi
+        weight: 1
+      - path: Spider_Armature
+        weight: 1
+      - path: Spider_Armature/Body_003
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Body2
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L/v_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L/v_B2_L/v_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L/v2_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L/v2_B2_L/v2_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L/v3_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L/v3_B2_L/v3_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L/v4_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L/v4_B2_L/v4_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L/FU_2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L/FU_2_L/FU_3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Zahn_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R/v_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R/v_B2_R/v_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R/v2_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R/v2_B2_R/v2_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R/v3_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R/v3_B2_R/v3_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R/v4_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R/v4_B2_R/v4_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R/FU_2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R/FU_2_R/FU_3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Zahn_R
+        weight: 1
+      - path: Spider_Armature/Body_003/v_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v2_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v3_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v4_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v2_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v3_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v4_B3_R_001
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: run_ani_vor
+      takeName: run_ani_vor
+      firstFrame: 0
+      lastFrame: 15
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Spider_Eyes
+        weight: 1
+      - path: Spider
+        weight: 1
+      - path: Spider_teeth
+        weight: 1
+      - path: Spider_Fur
+        weight: 1
+      - path: Hemi
+        weight: 1
+      - path: Spider_Armature
+        weight: 1
+      - path: Spider_Armature/Body_003
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Body2
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L/v_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L/v_B2_L/v_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L/v2_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L/v2_B2_L/v2_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L/v3_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L/v3_B2_L/v3_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L/v4_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L/v4_B2_L/v4_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L/FU_2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L/FU_2_L/FU_3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Zahn_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R/v_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R/v_B2_R/v_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R/v2_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R/v2_B2_R/v2_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R/v3_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R/v3_B2_R/v3_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R/v4_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R/v4_B2_R/v4_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R/FU_2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R/FU_2_R/FU_3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Zahn_R
+        weight: 1
+      - path: Spider_Armature/Body_003/v_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v2_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v3_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v4_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v2_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v3_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v4_B3_R_001
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: run_left
+      takeName: run_left
+      firstFrame: 0
+      lastFrame: 15
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Spider_Eyes
+        weight: 1
+      - path: Spider
+        weight: 1
+      - path: Spider_teeth
+        weight: 1
+      - path: Spider_Fur
+        weight: 1
+      - path: Hemi
+        weight: 1
+      - path: Spider_Armature
+        weight: 1
+      - path: Spider_Armature/Body_003
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Body2
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L/v_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L/v_B2_L/v_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L/v2_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L/v2_B2_L/v2_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L/v3_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L/v3_B2_L/v3_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L/v4_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L/v4_B2_L/v4_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L/FU_2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L/FU_2_L/FU_3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Zahn_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R/v_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R/v_B2_R/v_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R/v2_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R/v2_B2_R/v2_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R/v3_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R/v3_B2_R/v3_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R/v4_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R/v4_B2_R/v4_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R/FU_2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R/FU_2_R/FU_3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Zahn_R
+        weight: 1
+      - path: Spider_Armature/Body_003/v_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v2_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v3_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v4_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v2_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v3_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v4_B3_R_001
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: run_right
+      takeName: run_right
+      firstFrame: 0
+      lastFrame: 15
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Spider_Eyes
+        weight: 1
+      - path: Spider
+        weight: 1
+      - path: Spider_teeth
+        weight: 1
+      - path: Spider_Fur
+        weight: 1
+      - path: Hemi
+        weight: 1
+      - path: Spider_Armature
+        weight: 1
+      - path: Spider_Armature/Body_003
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Body2
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L/v_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L/v_B2_L/v_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L/v2_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L/v2_B2_L/v2_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L/v3_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L/v3_B2_L/v3_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L/v4_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L/v4_B2_L/v4_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L/FU_2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L/FU_2_L/FU_3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Zahn_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R/v_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R/v_B2_R/v_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R/v2_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R/v2_B2_R/v2_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R/v3_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R/v3_B2_R/v3_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R/v4_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R/v4_B2_R/v4_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R/FU_2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R/FU_2_R/FU_3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Zahn_R
+        weight: 1
+      - path: Spider_Armature/Body_003/v_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v2_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v3_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v4_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v2_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v3_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v4_B3_R_001
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: walk_ani_back
+      takeName: walk_ani_back
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Spider_Eyes
+        weight: 1
+      - path: Spider
+        weight: 1
+      - path: Spider_teeth
+        weight: 1
+      - path: Spider_Fur
+        weight: 1
+      - path: Hemi
+        weight: 1
+      - path: Spider_Armature
+        weight: 1
+      - path: Spider_Armature/Body_003
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Body2
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L/v_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L/v_B2_L/v_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L/v2_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L/v2_B2_L/v2_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L/v3_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L/v3_B2_L/v3_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L/v4_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L/v4_B2_L/v4_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L/FU_2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L/FU_2_L/FU_3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Zahn_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R/v_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R/v_B2_R/v_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R/v2_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R/v2_B2_R/v2_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R/v3_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R/v3_B2_R/v3_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R/v4_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R/v4_B2_R/v4_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R/FU_2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R/FU_2_R/FU_3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Zahn_R
+        weight: 1
+      - path: Spider_Armature/Body_003/v_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v2_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v3_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v4_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v2_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v3_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v4_B3_R_001
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: walk_ani_vor
+      takeName: walk_ani_vor
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Spider_Eyes
+        weight: 1
+      - path: Spider
+        weight: 1
+      - path: Spider_teeth
+        weight: 1
+      - path: Spider_Fur
+        weight: 1
+      - path: Hemi
+        weight: 1
+      - path: Spider_Armature
+        weight: 1
+      - path: Spider_Armature/Body_003
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Body2
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L/v_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L/v_B2_L/v_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L/v2_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L/v2_B2_L/v2_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L/v3_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L/v3_B2_L/v3_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L/v4_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L/v4_B2_L/v4_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L/FU_2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L/FU_2_L/FU_3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Zahn_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R/v_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R/v_B2_R/v_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R/v2_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R/v2_B2_R/v2_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R/v3_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R/v3_B2_R/v3_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R/v4_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R/v4_B2_R/v4_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R/FU_2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R/FU_2_R/FU_3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Zahn_R
+        weight: 1
+      - path: Spider_Armature/Body_003/v_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v2_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v3_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v4_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v2_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v3_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v4_B3_R_001
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: walk_left
+      takeName: walk_left
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Spider_Eyes
+        weight: 1
+      - path: Spider
+        weight: 1
+      - path: Spider_teeth
+        weight: 1
+      - path: Spider_Fur
+        weight: 1
+      - path: Hemi
+        weight: 1
+      - path: Spider_Armature
+        weight: 1
+      - path: Spider_Armature/Body_003
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Body2
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L/v_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L/v_B2_L/v_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L/v2_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L/v2_B2_L/v2_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L/v3_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L/v3_B2_L/v3_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L/v4_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L/v4_B2_L/v4_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L/FU_2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L/FU_2_L/FU_3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Zahn_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R/v_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R/v_B2_R/v_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R/v2_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R/v2_B2_R/v2_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R/v3_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R/v3_B2_R/v3_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R/v4_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R/v4_B2_R/v4_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R/FU_2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R/FU_2_R/FU_3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Zahn_R
+        weight: 1
+      - path: Spider_Armature/Body_003/v_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v2_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v3_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v4_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v2_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v3_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v4_B3_R_001
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: walk_right
+      takeName: walk_right
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Spider_Eyes
+        weight: 1
+      - path: Spider
+        weight: 1
+      - path: Spider_teeth
+        weight: 1
+      - path: Spider_Fur
+        weight: 1
+      - path: Hemi
+        weight: 1
+      - path: Spider_Armature
+        weight: 1
+      - path: Spider_Armature/Body_003
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Body2
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L/v_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L/v_B2_L/v_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L/v2_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L/v2_B2_L/v2_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L/v3_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L/v3_B2_L/v3_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L/v4_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L/v4_B2_L/v4_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L/FU_2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L/FU_2_L/FU_3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Zahn_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R/v_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R/v_B2_R/v_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R/v2_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R/v2_B2_R/v2_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R/v3_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R/v3_B2_R/v3_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R/v4_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R/v4_B2_R/v4_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R/FU_2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R/FU_2_R/FU_3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Zahn_R
+        weight: 1
+      - path: Spider_Armature/Body_003/v_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v2_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v3_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v4_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v2_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v3_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v4_B3_R_001
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: warte_pose
+      takeName: warte_pose
+      firstFrame: 0
+      lastFrame: 90
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Spider_Eyes
+        weight: 1
+      - path: Spider
+        weight: 1
+      - path: Spider_teeth
+        weight: 1
+      - path: Spider_Fur
+        weight: 1
+      - path: Hemi
+        weight: 1
+      - path: Spider_Armature
+        weight: 1
+      - path: Spider_Armature/Body_003
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Body2
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L/v_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_L/v_B2_L/v_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L/v2_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_L/v2_B2_L/v2_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L/v3_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_L/v3_B2_L/v3_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L/v4_B2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_L/v4_B2_L/v4_B3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L/FU_2_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_L/FU_2_L/FU_3_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Zahn_L
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R/v_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v_B1_R/v_B2_R/v_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R/v2_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v2_B1_R/v2_B2_R/v2_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R/v3_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v3_B1_R/v3_B2_R/v3_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R/v4_B2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/v4_B1_R/v4_B2_R/v4_B3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R/FU_2_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/FU_1_R/FU_2_R/FU_3_R
+        weight: 1
+      - path: Spider_Armature/Body_003/Body_002/Body/Zahn_R
+        weight: 1
+      - path: Spider_Armature/Body_003/v_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v2_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v3_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v4_B3_L_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v2_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v3_B3_R_001
+        weight: 1
+      - path: Spider_Armature/Body_003/v4_B3_R_001
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -194,7 +2404,7 @@ ModelImporter:
     rootMotionBoneName: 
     rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
