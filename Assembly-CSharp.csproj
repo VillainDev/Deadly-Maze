@@ -62,6 +62,7 @@
      <Compile Include="Assets\Assets\Scripts\PauseScreen.cs" />
      <Compile Include="Assets\Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Assets\Scripts\PoleMap.cs" />
+     <Compile Include="Assets\Assets\Scripts\PushWall.cs" />
      <Compile Include="Assets\Assets\Scripts\TrapArrow.cs" />
      <Compile Include="Assets\Assets\Scripts\TrapAxe.cs" />
      <Compile Include="Assets\Assets\Scripts\TrapMace.cs" />
