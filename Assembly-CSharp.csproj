@@ -63,6 +63,8 @@
      <Compile Include="Assets\Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Assets\Scripts\PoleMap.cs" />
      <Compile Include="Assets\Assets\Scripts\TrapArrow.cs" />
+     <Compile Include="Assets\Assets\Scripts\TrapAxe.cs" />
+     <Compile Include="Assets\Assets\Scripts\TrapMace.cs" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Assets\Models\Item\45 ACP Smith and Wesson Hand Gun\Readme.txt" />
      <None Include="Assets\Assets\Models\Main\pyramid\README.txt" />

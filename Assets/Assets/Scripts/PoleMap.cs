@@ -26,7 +26,7 @@ public class PoleMap : MonoBehaviour {
     /// The dot presents the player will move with the player on the map area, although it hides.
     /// </summary>
     void Update () {
-        if (Input.GetKeyDown (KeyCode.Tab)) {
+        if (Input.GetKeyDown (KeyCode.P)) {
             if (!PoleMapPanel.gameObject.activeInHierarchy)
                 PoleMapPanel.gameObject.SetActive (true);
             else PoleMapPanel.gameObject.SetActive (false);
